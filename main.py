@@ -88,7 +88,7 @@ def parse_list_file(link, output_directory):
                 'DOMAIN-KEYWORD':'domain_keyword', 'HOST-KEYWORD': 'domain_keyword', 'host-keyword': 'domain_keyword', 'IP-CIDR': 'ip_cidr',
                 'ip-cidr': 'ip_cidr', 'IP-CIDR6': 'ip_cidr', 
                 'IP6-CIDR': 'ip_cidr','SRC-IP-CIDR': 'source_ip_cidr', 'GEOIP': 'geoip', 'DST-PORT': 'port',
-                'SRC-PORT': 'source_port', "URL-REGEX": "domain_regex"}
+                'SRC-PORT': 'source_port', "URL-REGEX": "domain_regex",'DEST-PORT': 'port','PROCESS-NAME': 'process_name'}
 
     # 删除不在字典中的pattern
     df = df[df['pattern'].isin(map_dict.keys())].reset_index(drop=True)
