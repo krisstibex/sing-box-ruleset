@@ -3139,6 +3139,17 @@
         "63.92.224.0/19",
         "65.199.22.0/23"
       ]
+    },
+    {
+      "process_name": [
+        "/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService",
+        "LookupViewService",
+        "Music",
+        "News",
+        "TV",
+        "com.apple.geod",
+        "storedownloadd"
+      ]
     }
   ],
   "version": 1

@@ -1447,6 +1447,16 @@
         "2620:120:e000::/40",
         "74.125.0.0/16"
       ]
+    },
+    {
+      "process_name": [
+        "BackupandSync",
+        "GoogleDriveFS.exe",
+        "com.android.vending",
+        "com.google.android.gms",
+        "com.google.android.gsf",
+        "com.google.android.play.games"
+      ]
     }
   ],
   "version": 1
