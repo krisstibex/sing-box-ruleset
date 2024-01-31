@@ -1,3 +1,8 @@
+https://ruleset.skk.moe/List/non_ip/reject-drop.conf
+https://ruleset.skk.moe/List/domainset/reject.conf
+https://ruleset.skk.moe/List/non_ip/reject.conf
+https://ruleset.skk.moe/List/ip/reject.conf
+
 https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list
 https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/InternationalDownloadCDN.list
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleProxy/AppleProxy.yaml
@@ -13,4 +18,3 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical.yaml
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml
-
