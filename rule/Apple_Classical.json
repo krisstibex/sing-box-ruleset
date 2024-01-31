@@ -3143,12 +3143,21 @@
     {
       "process_name": [
         "/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService",
+        "CoreLocationAgent",
         "LookupViewService",
         "Music",
         "News",
         "TV",
+        "WeatherWidget",
+        "apsd",
+        "com.apple.Maps",
         "com.apple.geod",
-        "storedownloadd"
+        "findmydevice-user-agent",
+        "fmfd",
+        "mapspushd",
+        "netbiosd",
+        "storedownloadd",
+        "trustd"
       ]
     }
   ],
