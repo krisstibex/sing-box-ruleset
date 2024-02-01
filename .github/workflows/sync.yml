@@ -44,6 +44,17 @@ jobs:
           exit 0
         else
           git commit -m "Update RuleSets"
-          git tag -a "$(date +'%Y%m%d%H%M%S')" -m "Release $(date +'%Y%m%d%H%M%S')"
-          git push --tags
+          git push
         fi
+    - name: Set variables
+        run: |
+          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+        shell: bash
+    - name: Upload files to GitHub release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file_glob: true
+          file: ./rule/*.srs
+          tag: ${{ env.TAG_NAME }}
