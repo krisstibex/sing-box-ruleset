@@ -5,13 +5,16 @@ on:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-    - cron: '0 */8 * * *'
+    - cron: '0 8 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Set timezone to Asia/Shanghai
+      run: |
+        sudo timedatectl set-timezone Asia/Shanghai
     - uses: actions/checkout@v2
     - name: "Setup sing-box"
       env:
@@ -28,6 +31,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pandas requests pyyaml
+    - name: Set variables
+      run: |
+        echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+        echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+      shell: bash
     - name: Run script
       run: python ../main.py
       working-directory: ./rule/
@@ -46,3 +54,13 @@ jobs:
           git commit -m "Update RuleSets"
           git push
         fi
+    - name: Release
+      uses: svenstaro/upload-release-action@v2
+      with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file_glob: true
+          file: ./rule/*.srs
+          tag: ${{ env.TAG_NAME }}
+          release_name: Daily Update
+          body: Builded singbox ruleset in ${{ env.TAG_NAME }}
+          
