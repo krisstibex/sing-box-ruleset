@@ -1,9 +1,11 @@
-name: Config Update
+name: RuleSet Update
 
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: '0 */8 * * *'
 
 jobs:
   build:
