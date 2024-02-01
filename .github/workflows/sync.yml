@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Set timezone to Asia/Shanghai
+      run: |
+        sudo timedatectl set-timezone Asia/Shanghai
     - uses: actions/checkout@v2
     - name: "Setup sing-box"
       env:
