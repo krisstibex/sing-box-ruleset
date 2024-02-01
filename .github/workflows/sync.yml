@@ -44,5 +44,6 @@ jobs:
           exit 0
         else
           git commit -m "Update RuleSets"
-          git push
+          git tag -a "$(date +'%Y%m%d%H%M%S')" -m "Release $(date +'%Y%m%d%H%M%S')"
+          git push --tags
         fi
