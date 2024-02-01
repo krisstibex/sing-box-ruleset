@@ -31,7 +31,7 @@ jobs:
     - name: Run script
       run: python ../main.py
       working-directory: ./rule/
-    - name: Commit and push config.json
+    - name: Commit and push
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
@@ -43,6 +43,6 @@ jobs:
           echo "No changes to commit"
           exit 0
         else
-          git commit -m "Update rules"
+          git commit -m "Update RuleSets"
           git push
         fi
