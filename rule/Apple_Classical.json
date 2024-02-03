@@ -3146,7 +3146,6 @@
         "CoreLocationAgent",
         "LookupViewService",
         "Music",
-        "News",
         "TV",
         "WeatherWidget",
         "apsd",
@@ -3156,7 +3155,6 @@
         "fmfd",
         "mapspushd",
         "netbiosd",
-        "storedownloadd",
         "trustd"
       ]
     }
