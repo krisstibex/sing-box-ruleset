@@ -2,9 +2,7 @@
   "rules": [
     {
       "domain": [
-        "api.imem.app",
         "api.swiftgram.app",
-        "cdn-telegram.org",
         "comments.app",
         "contest.com",
         "graph.org",
@@ -16,12 +14,6 @@
         "tdesktop.com",
         "telega.one",
         "telegra.ph",
-        "telegram-cdn.org",
-        "telegram.dog",
-        "telegram.me",
-        "telegram.org",
-        "telegram.space",
-        "telegramdownload.com",
         "telesco.pe",
         "tg.dev",
         "tx.me",
@@ -30,12 +22,12 @@
     },
     {
       "domain_keyword": [
-        "nicegram"
+        "nicegram",
+        "telegram"
       ]
     },
     {
       "domain_suffix": [
-        ".cdn-telegram.org",
         ".comments.app",
         ".contest.com",
         ".graph.org",
@@ -47,12 +39,6 @@
         ".tdesktop.com",
         ".telega.one",
         ".telegra.ph",
-        ".telegram-cdn.org",
-        ".telegram.dog",
-        ".telegram.me",
-        ".telegram.org",
-        ".telegram.space",
-        ".telegramdownload.com",
         ".telesco.pe",
         ".tg.dev",
         ".tx.me",
@@ -61,19 +47,32 @@
     },
     {
       "ip_cidr": [
-        "109.239.140.0/24",
-        "149.154.160.0/20",
+        "149.154.160.0/22",
+        "149.154.162.0/23",
+        "149.154.164.0/22",
+        "149.154.166.0/23",
+        "149.154.168.0/22",
+        "149.154.172.0/22",
+        "185.76.151.0/24",
         "2001:67c:4e8::/48",
-        "2001:b28:f23c::/47",
+        "2001:b28:f23c::/48",
+        "2001:b28:f23d::/48",
         "2001:b28:f23f::/48",
-        "2a0a:f280::/29",
+        "2a0a:f280:203::/48",
         "5.28.192.0/18",
-        "91.108.0.0/16"
+        "91.105.192.0/23",
+        "91.108.12.0/22",
+        "91.108.16.0/22",
+        "91.108.20.0/22",
+        "91.108.4.0/22",
+        "91.108.56.0/22",
+        "91.108.56.0/23",
+        "91.108.8.0/22",
+        "95.161.64.0/20"
       ]
     },
     {
       "process_name": [
-        "Telegram.exe",
         "nekox.messenger",
         "org.telegram.messenger",
         "telegram-desktop"
