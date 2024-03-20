@@ -164884,24 +164884,6 @@
         "::ffff:60.171.183.186/128",
         "::ffff:60.171.183.98/128"
       ]
-    },
-    {
-      "process_name": [
-        "Thunder",
-        "Thunder.exe",
-        "com.bilibili.app.blue",
-        "com.bilibili.app.in",
-        "com.bilibili.comic",
-        "com.bilibili.comic.intl",
-        "com.jjwxc.reader",
-        "com.qiyi.video",
-        "com.taobao.taobao",
-        "com.xiaomi.mibrain.speech",
-        "com.zhiliaoapp.musically",
-        "tv.danmaku.bili",
-        "tv.danmaku.bilibilihd",
-        "小米云服务.exe"
-      ]
     }
   ],
   "version": 1

@@ -196,16 +196,6 @@
         "134.175.207.130/32",
         "203.107.1.0/24"
       ]
-    },
-    {
-      "process_name": [
-        "com.bilibili.app.blue",
-        "com.bilibili.app.in",
-        "com.bilibili.comic",
-        "com.bilibili.comic.intl",
-        "tv.danmaku.bili",
-        "tv.danmaku.bilibilihd"
-      ]
     }
   ],
   "version": 1

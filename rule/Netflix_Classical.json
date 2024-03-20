@@ -1200,11 +1200,6 @@
         "99.80.34.64/26",
         "99.80.88.0/25"
       ]
-    },
-    {
-      "process_name": [
-        "com.netflix.mediaclient"
-      ]
     }
   ],
   "version": 1

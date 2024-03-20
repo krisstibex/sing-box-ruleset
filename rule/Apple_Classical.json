@@ -3139,24 +3139,6 @@
         "63.92.224.0/19",
         "65.199.22.0/23"
       ]
-    },
-    {
-      "process_name": [
-        "/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService",
-        "CoreLocationAgent",
-        "LookupViewService",
-        "Music",
-        "TV",
-        "WeatherWidget",
-        "apsd",
-        "com.apple.Maps",
-        "com.apple.geod",
-        "findmydevice-user-agent",
-        "fmfd",
-        "mapspushd",
-        "netbiosd",
-        "trustd"
-      ]
     }
   ],
   "version": 1

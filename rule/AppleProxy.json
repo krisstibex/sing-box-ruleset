@@ -58,11 +58,6 @@
         ".ocsp.apple.com",
         ".tv.apple.com"
       ]
-    },
-    {
-      "process_name": [
-        "LookupViewService"
-      ]
     }
   ],
   "version": 1
