@@ -45,7 +45,7 @@ def parse_and_convert_to_dataframe(link):
                     if is_ipv4_or_ipv6(item):
                         pattern = 'IP-CIDR'
                     else:
-                        if address.startswith('+'):
+                        if address.startswith('+') or address.startswith('.'):
                             pattern = 'DOMAIN-SUFFIX'
                             address = address[1:]
                             if address.startswith('.'):
@@ -87,8 +87,8 @@ def parse_list_file(link, output_directory):
     map_dict = {'DOMAIN-SUFFIX': 'domain_suffix', 'HOST-SUFFIX': 'domain_suffix', 'DOMAIN': 'domain', 'HOST': 'domain', 'host': 'domain',
                 'DOMAIN-KEYWORD':'domain_keyword', 'HOST-KEYWORD': 'domain_keyword', 'host-keyword': 'domain_keyword', 'IP-CIDR': 'ip_cidr',
                 'ip-cidr': 'ip_cidr', 'IP-CIDR6': 'ip_cidr', 
-                'IP6-CIDR': 'ip_cidr','SRC-IP-CIDR': 'source_ip_cidr', 'GEOIP': 'geoip', 'DST-PORT': 'port',
-                'SRC-PORT': 'source_port', "URL-REGEX": "domain_regex",'DEST-PORT': 'port','PROCESS-NAME': 'process_name'}
+                'IP6-CIDR': 'ip_cidr','SRC-IP-CIDR': 'source_ip_cidr', 'GEOIP': 'geoip', 'DST-PORT': 'port', 'DEST-PORT': 'port',
+                'SRC-PORT': 'source_port', "URL-REGEX": "domain_regex"}
 
     # 删除不在字典中的pattern
     df = df[df['pattern'].isin(map_dict.keys())].reset_index(drop=True)
