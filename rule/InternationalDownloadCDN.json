@@ -24,6 +24,7 @@
         "client-patch.gundamevogame.com",
         "clientpatch.aws.blue-protocol.com",
         "clientpatch.blue-protocol.com",
+        "cloudflarestorage.com",
         "cnl-hb-live.fivem.net",
         "collaborate.download.prss.microsoft.com",
         "collaborateppe.download.prss.microsoft.com",
@@ -267,6 +268,7 @@
     },
     {
       "domain_suffix": [
+        ".cloudflarestorage.com",
         ".storage.live.com"
       ]
     }
