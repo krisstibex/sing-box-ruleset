@@ -2,31 +2,12 @@
   "rules": [
     {
       "domain": [
-        "audio-ak-spotify-com.akamaized.net",
         "audio4-ak-spotify-com.akamaized.net",
-        "byspotify.com",
         "cdn-spotify-experiments.conductrics.com",
         "heads-ak-spotify-com.akamaized.net",
-        "heads4-ak-spotify-com.akamaized.net",
-        "pscdn.co",
-        "scdn.co",
-        "spoti.fi",
-        "spotify-com.akamaized.net",
-        "spotify-everywhere.com",
-        "spotify.com",
         "spotify.com.edgesuite.net",
-        "spotify.design",
         "spotify.map.fastly.net",
-        "spotify.map.fastlylb.net",
-        "spotifycdn.com",
-        "spotifycdn.net",
-        "spotifycharts.com",
-        "spotifycodes.com",
-        "spotifyforbrands.com",
-        "spotifyjobs.com",
-        "spotifynewsroom.jp",
-        "spotilocal.com",
-        "tospotify.com"
+        "spotify.map.fastlylb.net"
       ]
     },
     {
@@ -37,25 +18,25 @@
     },
     {
       "domain_suffix": [
-        ".audio-ak-spotify-com.akamaized.net",
-        ".byspotify.com",
-        ".heads4-ak-spotify-com.akamaized.net",
-        ".pscdn.co",
-        ".scdn.co",
-        ".spoti.fi",
-        ".spotify-com.akamaized.net",
-        ".spotify-everywhere.com",
-        ".spotify.com",
-        ".spotify.design",
-        ".spotifycdn.com",
-        ".spotifycdn.net",
-        ".spotifycharts.com",
-        ".spotifycodes.com",
-        ".spotifyforbrands.com",
-        ".spotifyjobs.com",
-        ".spotifynewsroom.jp",
-        ".spotilocal.com",
-        ".tospotify.com"
+        "audio-ak-spotify-com.akamaized.net",
+        "byspotify.com",
+        "heads4-ak-spotify-com.akamaized.net",
+        "pscdn.co",
+        "scdn.co",
+        "spoti.fi",
+        "spotify-com.akamaized.net",
+        "spotify-everywhere.com",
+        "spotify.com",
+        "spotify.design",
+        "spotifycdn.com",
+        "spotifycdn.net",
+        "spotifycharts.com",
+        "spotifycodes.com",
+        "spotifyforbrands.com",
+        "spotifyjobs.com",
+        "spotifynewsroom.jp",
+        "spotilocal.com",
+        "tospotify.com"
       ]
     },
     {

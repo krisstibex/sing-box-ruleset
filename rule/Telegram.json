@@ -2,7 +2,17 @@
   "rules": [
     {
       "domain": [
-        "api.swiftgram.app",
+        "api.swiftgram.app"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "nicegram",
+        "telegram"
+      ]
+    },
+    {
+      "domain_suffix": [
         "comments.app",
         "contest.com",
         "graph.org",
@@ -18,31 +28,6 @@
         "tg.dev",
         "tx.me",
         "usercontent.dev"
-      ]
-    },
-    {
-      "domain_keyword": [
-        "nicegram",
-        "telegram"
-      ]
-    },
-    {
-      "domain_suffix": [
-        ".comments.app",
-        ".contest.com",
-        ".graph.org",
-        ".legra.ph",
-        ".mbrx.app",
-        ".quiz.directory",
-        ".stel.com",
-        ".t.me",
-        ".tdesktop.com",
-        ".telega.one",
-        ".telegra.ph",
-        ".telesco.pe",
-        ".tg.dev",
-        ".tx.me",
-        ".usercontent.dev"
       ]
     },
     {

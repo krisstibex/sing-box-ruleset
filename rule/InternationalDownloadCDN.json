@@ -30,7 +30,6 @@
         "client-patch.gundamevogame.com",
         "clientpatch.aws.blue-protocol.com",
         "clientpatch.blue-protocol.com",
-        "cloudflarestorage.com",
         "cnl-hb-live.fivem.net",
         "collaborate.download.prss.microsoft.com",
         "collaborateppe.download.prss.microsoft.com",
@@ -157,7 +156,6 @@
         "steamusercontent-a.akamaihd.net",
         "steamuserimages-a.akamaihd.net",
         "storage.fivem.net",
-        "storage.live.com",
         "store.cloudflare.steamstatic.com",
         "storecorefulfillment.download.prss.microsoft.com",
         "surface.download.prss.microsoft.com",
@@ -185,8 +183,8 @@
     },
     {
       "domain_suffix": [
-        ".cloudflarestorage.com",
-        ".storage.live.com"
+        "cloudflarestorage.com",
+        "storage.live.com"
       ]
     }
   ],

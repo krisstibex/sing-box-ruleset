@@ -2,17 +2,13 @@
   "rules": [
     {
       "domain": [
-        "activision.com",
-        "callofduty.com",
         "cod-assets.cdn.callofduty.com",
         "d103o8jcukv8ws.cloudfront.net",
-        "demonware.net",
         "dev.cdni.callofduty.com",
         "genesis.stun.eu.demonware.net",
         "genesis.stun.us.demonware.net",
         "prod-data-energon.infra-ext.activision.com",
         "prod.cdni.callofduty.com",
-        "telescope.callofduty.com",
         "timberwolf-lobby.prod.demonware.net",
         "www.callofduty.com",
         "wzm-gvs.prod.demonware.net"
@@ -20,10 +16,10 @@
     },
     {
       "domain_suffix": [
-        ".activision.com",
-        ".callofduty.com",
-        ".demonware.net",
-        ".telescope.callofduty.com"
+        "activision.com",
+        "callofduty.com",
+        "demonware.net",
+        "telescope.callofduty.com"
       ]
     },
     {
