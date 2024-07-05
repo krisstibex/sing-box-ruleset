@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: "Setup sing-box"
       env:
-        SING_BOX_DEB_URL: "https://github.com/SagerNet/sing-box/releases/download/v1.9.1/sing-box_1.9.1_linux_amd64.deb"
+        SING_BOX_DEB_URL: "https://github.com/SagerNet/sing-box/releases/download/v1.9.3/sing-box_1.9.3_linux_amd64.deb"
       run: |
           set -Eeuo pipefail
           wget -O sing-box.deb $SING_BOX_DEB_URL
@@ -60,6 +60,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file_glob: true
           file: ./rule/*.srs
+          file: ./sing-box-manager.zip
           tag: ${{ env.TAG_NAME }}
           release_name: Daily Update
           body: Builded singbox ruleset in ${{ env.TAG_NAME }}
