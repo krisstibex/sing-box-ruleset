@@ -60,7 +60,6 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file_glob: true
           file: ./rule/*.srs
-          file: ./sing-box-manager.zip
           tag: ${{ env.TAG_NAME }}
           release_name: Daily Update
           body: Builded singbox ruleset in ${{ env.TAG_NAME }}
