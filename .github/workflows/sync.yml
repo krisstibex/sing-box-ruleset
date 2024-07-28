@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: "Setup sing-box"
       env:
-        SING_BOX_DEB_URL: "https://github.com/SagerNet/sing-box/releases/download/v1.10.0-alpha.25/sing-box_1.10.0-alpha.25_linux_amd64.deb"
+        SING_BOX_DEB_URL: "https://github.com/SagerNet/sing-box/releases/download/v1.10.0-alpha.27/sing-box_1.10.0-alpha.27_linux_amd64.deb"
       run: |
           set -Eeuo pipefail
           wget -O sing-box.deb $SING_BOX_DEB_URL
@@ -39,7 +39,7 @@ jobs:
     - name: Download content
       run: |
         URL="https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt"
-        OUTPUT_FILE="./rule/adservers.txt"
+        OUTPUT_FILE="./rule/adrules-dns.txt"
 
         curl -L $URL -o $OUTPUT_FILE
 
@@ -51,7 +51,7 @@ jobs:
         fi
     - name: Convert AdGuard DNS Filter to sing-box rule set
       run: |
-        sing-box rule-set convert --type adguard --output ./rule/adservers.srs ./rule/adservers.txt
+        sing-box rule-set convert --type adguard --output ./rule/adrules-dns.srs ./rule/adrules-dns.txt
     - name: Run script
       run: python ../main.py
       working-directory: ./rule/
