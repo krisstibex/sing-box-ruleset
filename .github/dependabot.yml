@@ -1,0 +1,8 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"  # 指定为 GitHub Actions 依赖
+    directory: ".github/workflows/"        # 指定工作流文件夹
+    schedule:
+      interval: "weekly"                    # 更新频率，可选值：daily, weekly, monthly
+    commit-message:
+      prefix: "deps"                        # 提交消息前缀
