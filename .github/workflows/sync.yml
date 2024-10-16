@@ -15,7 +15,7 @@ jobs:
     - name: Set timezone to Asia/Shanghai
       run: |
         sudo timedatectl set-timezone Asia/Shanghai
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: "Setup sing-box"
       env:
         SING_BOX_DEB_URL: "https://github.com/SagerNet/sing-box/releases/download/v1.10.0/sing-box_1.10.0_linux_amd64.deb"
