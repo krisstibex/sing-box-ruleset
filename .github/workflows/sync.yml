@@ -3,6 +3,8 @@ name: RuleSet Update
 on:
   push:
     branches: [ main ]
+    path-ignore:
+      - .github/**
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * 1'
