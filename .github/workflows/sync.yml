@@ -77,6 +77,6 @@ jobs:
           file_glob: true
           file: ./rule/*.srs
           tag: ${{ env.TAG_NAME }}
-          release_name: Daily Update
-          body: Builded singbox ruleset in ${{ env.TAG_NAME }}
+          release_name: Weekly 更新
+          body: Builded sing-box rulesets at ${{ env.TAG_NAME }}
           
